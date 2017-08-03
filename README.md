@@ -9,7 +9,10 @@ npm i effects-as-data-redux --save
 
 ### How it works
 
-Redux -> React -> Effect-as-data -> Redux -> React -> (repeat)
+#### Data low
+  1. Redux passes state to React using `react-redux`.
+  1. React handles UI events and calls effects-as-data functions that have been passed in as props.
+  1. Effect-as-data dispatches Redux actions.
 
 Using effects-as-data to control Redux further decouples the view layer from Redux and gives you the full power of effects-as-data to execute business logic and dispatch Redux actions at the appropriate times.  This breaks the (IMHO) bad habit of using the Redux dispatch cycle as a general purpose message bus for the application and instead allows Redux to be used only for dispatching actions for state mutation.
 
