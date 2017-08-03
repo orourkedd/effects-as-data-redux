@@ -1,8 +1,8 @@
 import * as cmds from "./cmds";
-import handlers from "./handlers";
+import buildReduxHandlers from "./handlers";
 
-exports.cmds = cmds;
-exports.handlers = handlers;
+exports.redux = cmds;
+exports.buildReduxHandlers = buildReduxHandlers;
 
 export function generateCmdsFromActions(actions) {
   let rcmds = {};
