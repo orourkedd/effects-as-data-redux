@@ -1,6 +1,6 @@
 {
   "name": "effects-as-data-redux",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easily connect redux and effects-as-data.",
   "main": "lib/index.js",
   "scripts": {

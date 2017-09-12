@@ -2,6 +2,8 @@
 
 This module contains Redux cmds and handlers for seamless Redux and effects-as-data connection.  It also exposes helper functions to autogenerate cmds and effects-as-data functions from Redux actions.
 
+This module is meant to be used with [effects-as-data](https://github.com/orourkedd/effects-as-data).
+
 ## Installation
 ```
 npm i effects-as-data-redux --save
