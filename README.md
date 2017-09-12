@@ -34,7 +34,7 @@ const reduxCmds = generateCmdsFromActions(actions)
 
 // combine and export universal cmds and the redux cmds generated above
 export default {
-  ...reduxCmds,
+  state: reduxCmds,
   ...cmds
 }
 ```
@@ -47,7 +47,7 @@ function * setUser (id) {
   //  the httpGet cmds comes from effects-as-data-universal
   const user = yield cmds.httpGet(`https://example.com/api/users/${id}`)
   // this will dispatch a SET_USER action to the Redux store
-  yield cmds.setUser(user)
+  yield cmds.state.setUser(user)
 }
 ```
 
