@@ -8,6 +8,9 @@ This module is meant to be used with [effects-as-data](https://github.com/orourk
 ```
 npm i effects-as-data-redux --save
 ```
+## Usage with create-react-app
+
+`create-react-app` doesn't play nice with generators.  To fix this, `npm install regenerator-runtime`.  Then, add `import 'regenerator-runtime/runtime'` to the entry point of the project (ie, `src/index.js`).
 
 ### How it works
 
