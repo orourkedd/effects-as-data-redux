@@ -14,6 +14,16 @@ npm i effects-as-data-redux --save
 * `npm install regenerator-runtime`.
 * Follow the example of `src/index.js` and `src/app.js` in: https://github.com/orourkedd/effects-as-data-examples/tree/master/todoapp
 
+#### src/index.js
+```js
+// Expose regenerator runtime globally at the entrypoint of the app.
+// The is required to support generators in create-react-app
+const regeneratorRuntime = require("regenerator-runtime");
+global.regeneratorRuntime = regeneratorRuntime;
+// app.js is the normal index.js renamed
+require("./app");
+```
+
 ### How it works
 
 #### Data flow
