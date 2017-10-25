@@ -12,7 +12,7 @@ npm i effects-as-data-redux --save
 
 `create-react-app` doesn't play nice with generators.  To fix this:
 * `npm install regenerator-runtime`.
-* Follow the example of `index.js` and `app.js` in: https://github.com/orourkedd/effects-as-data-examples/tree/master/todoapp
+* Follow the example of `src/index.js` and `src/app.js` in: https://github.com/orourkedd/effects-as-data-examples/tree/master/todoapp
 
 ### How it works
 
